@@ -8,11 +8,6 @@
 
 #import "RCTWeChat.h"
 #import "WXApiObject.h"
-#import <React/RCTEventDispatcher.h>
-#import <React/RCTBridge.h>
-#import <React/RCTLog.h>
-#import <React/RCTImageLoader.h>
-#import <RCTImage/RCTImageUtils.h>
 
 
 // Define error messages
