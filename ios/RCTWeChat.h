@@ -8,7 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <React/RCTBridgeModule.h>
+#if __has_include(<React/RCTBridgeModule.h>)
+    #import <React/RCTBridgeModule.h>
+    #import <React/RCTEventDispatcher.h>
+    #import <React/RCTImageLoader.h>
+    #import <RCTImageUtils.h>
+#else
+    #import "RCTBridgeModule.h"
+    #import "RCTBridge.h"
+    #import "RCTEventDispatcher.h"
+    #import "RCTLog.h"
+    #import "RCTImageLoader.h"
+    #import "RCTImageUtils.h"
+#endif
 #import "WXApi.h"
 
 // define share type constants
